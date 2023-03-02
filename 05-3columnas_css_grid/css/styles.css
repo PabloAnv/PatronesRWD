@@ -49,3 +49,19 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media(min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-areas: "izquierda centro derecha";
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-auto-flow: column;
+        column-gap: 2rem;
+    }
+
+
+    .grid__centro {
+        grid-column: centro;
+    }
+
+}
