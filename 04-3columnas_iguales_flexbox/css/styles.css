@@ -28,7 +28,7 @@ h1 {
     margin: 0 auto;
 }
 
-.entrada-blog a {
+.flex__entrada-blog a {
     display: inline-block;
     background-color: #2196F3;
     color: white;
@@ -39,3 +39,14 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+@media(min-width: 768px) {
+    .flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flex__entrada-blog{
+        flex: 0 0 calc( 33% - 2rem);
+    }
+}
