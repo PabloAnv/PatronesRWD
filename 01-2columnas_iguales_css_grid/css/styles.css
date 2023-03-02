@@ -28,7 +28,7 @@ h1 {
     margin: 0 auto;
 }
 
-.entrada-blog a {
+.grid__entrada-blog a {
     display: inline-block;
     background-color: #2196F3;
     color: white;
@@ -39,3 +39,11 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+@media(min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+}
