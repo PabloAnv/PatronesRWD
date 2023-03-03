@@ -37,14 +37,28 @@ p {
     margin: 0 auto;
 }
 
-.entrada-blog a {
-    display: inline-block;
-    background-color: #2196F3;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
+/** CODIGO AQUI **/
+
+@media (min-width: 480px) {
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .primera,
+    .segunda {
+        flex-basis: calc(50% - 1rem);
+    }
+
 }
 
-/** CODIGO AQUI **/
+@media (min-width: 768px) {
+
+    .primera,
+    .segunda,
+    .tercera {
+        flex: 0 0 calc(33% - 1rem);
+    }
+}
