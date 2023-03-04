@@ -48,3 +48,36 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px){
+    .layout-shifter{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenido{
+        order: -1;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .entrada-blog{
+        flex-basis: calc( 50% - 1rem);
+    }
+}
+
+@media (min-width: 992px){
+    .layout-shifter{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sidebar{
+        flex-basis: calc( 25% - 1rem);
+    }
+
+    .contenido{
+        flex-basis: calc( 75% - 1rem);
+        flex-direction: column;
+    }
+}
