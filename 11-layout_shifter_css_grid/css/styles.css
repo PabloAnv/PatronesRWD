@@ -49,3 +49,51 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media(min-width: 768px) {
+    .layout-shifter {
+        display: grid;
+        grid-template-areas: "contenido"
+                             "inferior";
+    }
+
+    .sidebar {
+        grid-area: inferior;
+    }
+
+    .contenido-principal {
+        grid-area: contenido;
+        display: grid;
+        grid-template-areas: "entrada1 entrada2";
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .layout-shifter {
+
+        grid-template-areas: "contenido sidebar";
+        grid-template-columns: 3fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .contenido-principal {
+        grid-area: contenido;
+        grid-template-areas: "entrada1"
+                             "entrada2";
+        grid-template-columns: unset;
+        row-gap: 2rem;
+    }
+
+    .entrada1{
+        grid-area: entrada1;
+    }
+
+    .entrada2{
+        grid-area: entrada2;
+    }
+}
